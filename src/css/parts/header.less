@@ -1,0 +1,302 @@
+/*header*/
+
+.header-first {
+	box-sizing: border-box;
+	background: #f0f0f0;
+	color: rgb(80, 80, 80);
+	padding: 5px 0;
+}
+
+.header-first__geo {
+    position: relative;
+    padding-left: 25px;
+    margin-right: 30px;
+}
+
+.header-first__geo:before {
+    content: "";
+    background: url(../images/sprites.svg) no-repeat -9px -128px;
+    width: 17px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: -4px;
+}
+
+.header-first__mail {
+	position: relative;
+	padding-left: 30px;
+	color: rgb(80, 80, 80);
+}
+
+.header-first__mail:before {
+    content: "";
+    background: url(../images/sprites.svg) no-repeat -46px -131px;
+    width: 25px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+}
+
+.header-second {
+    padding: 13px 0;
+}
+
+.column-right {
+    flex-wrap: nowrap;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {
+	display: block;
+	background: url(../images/logo.png) no-repeat center;
+	background-size: contain;
+	width: 365px;
+    height: 72px;
+	text-decoration: none;
+}
+
+.phone__number {
+    display: block;
+    font-size: 22px;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+
+.phone__number span {
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.phone__text {
+	font-size: 13px;
+	color: rgb(97, 97, 97);
+}
+
+.button_header {
+	max-width: 230px;
+	margin-left: 40px;
+}
+
+.header-third {
+	box-sizing: border-box;
+	background-color: rgb(0, 0, 0);
+	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.menu {
+	flex-wrap: nowrap;
+	justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    list-style: none;
+    position: relative;
+}
+
+.menu li.menu-item-has-children:before {
+    content: "";
+    background: url(../../images/sprites.svg) no-repeat -138px -136px;
+    width: 11px;
+    height: 9px;
+    position: absolute;
+    right: 13px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.menu a {
+    display: inline-block;
+    font: 500 13px "Muller";
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 22px;
+    line-height: 45px;
+}
+
+.menu li.menu-item-has-children a {
+	padding-right: 30px;
+}
+
+.menu a:hover{
+	color: #d4c89f;
+}
+
+header .menu li:first-child a {
+   padding-left: 0;
+}
+
+header .menu li:last-child a {
+   padding-right: 0;
+}
+
+.sub-menu {
+    position: absolute;
+    margin: 0 auto;
+    padding: 10px 0;
+    top: 45px;
+    left: -40px;
+    right: -40px; 
+    z-index: 3;
+    background: #dadada;
+    box-shadow: 0 4px 6px #00000047;
+	display: none;
+}
+
+.menu li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+	position: relative; 
+    padding: 0 20px;
+	float: none;
+}
+
+.sub-menu li a {
+    position: relative; 
+    font-size: 18px;
+	color: rgb(0,0,0); 
+	text-transform: none;
+    line-height: 1;
+    padding: 15px 0;
+    border-top: 1px solid rgb(0,0,0); 	
+    text-align: center;
+    width: 100%;
+} 
+
+.sub-menu li:first-child a{
+	border-top:0;
+}
+
+/*burger*/
+
+.burger {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: relative;
+	margin: auto 0;
+}
+
+.burger span, .burger span::before, .burger span::after {
+	display: block;
+    cursor: pointer;
+    border-radius: 1px;
+    height: 3px;
+    width: 26px;
+    background: #ffffff;
+    position: absolute;
+    top: 16px;
+    right: 12px;
+    transition: all .2s ease-in-out;
+    border-radius: 10px;
+}
+
+.burger span::before {
+    content: '';
+    left: 0;
+    top: 8px;
+}
+
+.burger span::after {
+    content: '';
+    left: 0;
+    top: 16px;
+}
+
+.burger_active span {
+    background-color: transparent;
+	
+}
+    
+.burger_active span::before  {
+    transform: rotate(45deg);
+}
+
+.burger_active span::after  {
+    transform: rotate(-45deg);
+    top: 8px;
+} 
+
+
+/*media*/ 
+
+@media screen and (max-width: 1279px) {
+	
+	header .wrapper {
+		flex-direction: column-reverse;
+	}
+	
+	.header-mobile-wr {
+		padding: 15px 0;
+	}
+	
+	.burger {
+        display: block;
+    }
+	
+	header .navbar {
+		display: none;
+	}
+	
+	header .menu {
+		display: block;
+		height: auto;
+		margin: 0;
+		width: 100%;
+		text-align: center;
+		z-index: 2;
+	}
+    
+    header .menu>li {
+        float: none;
+		border-top: 1px solid #c2c2c2;
+    } 
+    
+    header .menu>li>a {
+		display: block; 
+		padding:0;
+	}  
+	
+	header .menu li:hover .sub-menu {
+		display: none;
+	}
+	
+	header .menu li .sub-menu {
+		position: static; 
+		box-shadow: none;
+		border-top: 1px solid #c2c2c2;
+    }
+	
+	header .sub-menu li {
+    	float: none;
+		padding:0;
+	}
+	
+	.sub-menu li a {
+		width: 100%;
+		border-top:  1px solid rgb(194, 194, 194);
+	} 
+	
+}
+
+@media screen and (max-width: 1023px) {
+	
+	
+}
+
+@media screen and (max-width: 767px) {
+    
+}
+
+@media screen and (max-width: 639px) {
+   
+	
+}

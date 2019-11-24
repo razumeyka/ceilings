@@ -1,0 +1,218 @@
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerRegular.eot?#iefix') format('embedded-opentype'),  url('../fonts/MullerRegular.otf')  format('opentype'),
+	     url('../fonts/MullerRegular.woff') format('woff'), url('../fonts/MullerRegular.ttf')  format('truetype'), url('../fonts/MullerRegular.svg#MullerRegular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerMedium.eot?#iefix') format('embedded-opentype'),  url('../fonts/MullerMedium.otf')  format('opentype'),
+	     url('../fonts/MullerMedium.woff') format('woff'), url('../fonts/MullerMedium.ttf')  format('truetype'), url('../fonts/MullerMedium.svg#MullerMedium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerBold.eot?#iefix') format('embedded-opentype'),  url('../fonts/MullerBold.otf')  format('opentype'),
+	     url('../fonts/MullerBold.woff') format('woff'), url('../fonts/MullerBold.ttf')  format('truetype'), url('../fonts/MullerBold.svg#MullerBold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerBlack.eot?#iefix') format('embedded-opentype'),  url('../fonts/MullerBlack.otf')  format('opentype'),
+	     url('../fonts/MullerBlack.woff') format('woff'), url('../fonts/MullerBlack.ttf')  format('truetype'), url('../fonts/MullerBlack.svg#MullerBlack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+body{
+    margin:0;
+	padding: 0;
+	font-family: 'Muller', sans-serif;
+	font-size: 15px; 
+	font-weight: 400;
+	color: rgb(0, 0, 0);
+	line-height:1.4; 
+	min-width: 360px;
+}
+
+button,input,select,textarea{
+    font-family: 'Muller';
+    font-size: 18px;
+} 
+
+p {
+    font-size: 14px;
+    line-height: 1.3;
+    color: #505050;
+    margin: 17px 0;
+}
+
+.wrapper {
+    max-width:1200px;
+    padding:0 40px;
+    margin:0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex_between {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+
+.caption {
+    font: 900 50px/1 "Muller";
+    text-align: center;
+    margin: 0 0 12px;
+}
+
+.caption_left {
+	text-align: left;
+}
+
+.caption:first-letter {
+	color: rgb(175, 0, 0);
+}
+
+.description {
+	font-size: 18px;
+	color: rgb(80, 80, 80);
+	text-align: center;
+}
+
+.description_left {
+	text-align: left;
+}
+
+/* buttons */
+
+.button {
+	display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+    outline: 0;
+    border: none;
+	border-radius: 3px;
+	background-color: rgb(175, 0, 0);
+	width:100%;
+    font-size: 13px;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+    text-align: center;
+	position: relative;
+	padding: 15px 15px 13px;
+}
+
+
+.button_black {
+	background-color: rgb(0, 0, 0);
+	font-size: 17px;
+	text-transform: none;
+}
+
+.form__button-bg1 {
+	display: block;
+	box-sizing: border-box;
+	background: rgba(255,255,255,.2);
+	border-radius: 3px;
+	padding: 5px;
+	height: 82px;
+	width: calc(100% + 26px);
+	margin: -13px 0 0 -13px;
+}
+
+.form__button-bg2 {
+	display: block;
+	box-sizing: border-box;
+	background: rgba(255,255,255,.2);
+	border-radius: 3px;
+	padding: 8px;
+	height: 100%;
+}
+
+.button_framed {
+	background-color: rgb(0, 0, 0);
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	height: 100%;
+}
+
+.button_with-icon {
+    text-align: left;
+    padding: 15px 15px 13px 45px;
+}
+
+.button_with-icon:before {
+    content: "";
+    background: url(../images/sprites.svg) no-repeat -90px -126px;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: 9px;
+    top: 8px;
+}
+
+.button__text1 {
+	font-size: 14px;
+	font-weight: 700;
+	color: rgb(240, 240, 240);
+}
+
+.button__text2 {
+	color: rgb(240, 240, 240);
+	text-transform: none;
+}
+
+
+
+
+
+/*media*/ 
+
+
+
+
+
+@media screen and (max-width: 1279px) {
+	.wrapper {
+		padding: 0 15px;
+	}
+	
+}
+
+@media screen and (max-width: 1023px) {
+    
+		
+}
+
+@media screen and (max-width: 767px) {
+    
+
+}
+
+@media screen and (max-width: 639px) {
+	
+	
+}
+
+
+
+

@@ -1,0 +1,171 @@
+.person {
+	display: none;
+    max-width: 1083px;
+    padding: 40px 20px;
+    margin: 15px 0;
+    background: 0 0;
+}
+
+#order,#formblock{
+    display: none;
+    box-shadow: 0 0 20px 0 #fff;
+    border-radius: 50px;
+    max-width: 360px;
+    text-align: center;
+}
+
+.person__wrapper {
+	position: relative;
+	box-sizing: border-box;
+	background: #ffffff;
+	box-shadow: 0 0 20px 0 #fff;
+	border-radius: 40px;
+}
+
+.person__spaceman {
+    background: url(../images/spaceman-2.png) no-repeat center;
+    background-size: contain;
+    width: 730px;
+    height: 500px;
+    position: absolute;
+    right: -167px;
+    bottom: 0;
+}
+
+.person__header {
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,.1);
+    border-radius: 50px;
+    padding: 10px 20px;
+    position: absolute;
+    top: -28px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 380px;
+	z-index:10;
+}
+
+.person__header:before {
+	content: "";
+	background: url('../images/sprites.svg') no-repeat -252px -162px;
+	width: 36px;
+	height: 34px;
+	position: absolute;
+	top: 28px;
+	left: 15px;
+}
+
+.person__header:after {
+	content: "";
+	background: url('../images/sprites.svg') no-repeat -302px -162px;
+	width: 36px;
+	height: 34px;
+	position: absolute;
+	top: 28px;
+	right: 15px;
+}
+
+.person__name {
+	font: 400 46px/1 "NovitoNova";
+	color: rgb(23, 13, 102);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.person__position {
+	font: 400 18px "Circe";
+	color: rgb(86, 86, 86);
+	text-align: center;
+}
+
+.person__content {
+    box-sizing: border-box;
+    padding: 70px 420px 80px 60px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+	min-height: 600px;
+	min-width: 290px;
+}
+
+.person__content:before {
+    content: "";
+    background-color: #ffd57e;
+    width: 300px;
+    height: 100%;
+    transform: rotate(15deg);
+    position: absolute;
+    top: 0;
+    right: -80px;
+}
+
+.person h3 {
+	font: 400 34px "NovitoNova";
+	color: #170d66;;
+	text-transform: uppercase;
+	margin: 13px 0;
+}
+
+.person h3:first-letter {
+	font-size: 44px;
+	color: rgb(176, 0, 137);
+}
+
+.person p {
+    font: 400 18px/1.4 Circe;
+    margin: 15px 0;
+}
+
+
+
+ 
+
+@media screen and (max-width: 1023px) {
+	.person__content {
+		padding: 70px 30px 30px;
+	}
+	
+	.person__content:before {
+		display: none;
+	}
+	
+	.person__spaceman {
+		display: none;
+	}
+	
+}
+
+@media screen and (max-width: 767px) {
+	
+	
+	
+}
+
+
+@media screen and (max-width: 639px) {
+
+	.person {
+		padding: 30px 10px;
+	}
+	
+	.person__header {
+		max-width: 330px;
+	} 
+
+	.person__name{
+		font-size: 42px;
+	}
+	
+	.person__position{
+		font-size: 16px;
+	}
+	
+	.person__header:before, .person__header:after {
+		display: none;
+	}
+
+
+}
+
