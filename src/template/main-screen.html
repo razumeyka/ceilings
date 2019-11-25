@@ -1,4 +1,5 @@
 <div class="main-screen">
+	<div class="main-screen__bg"></div>
 	<div class="wrapper flex_between">	 
 		<div class="main-screen__text">
 			<h1 class="main-screen__caption">Натяжной потолок</h1>
@@ -24,48 +25,52 @@
 				</div>
 			</div>	
 		</div>
-		<div class="main-slider">
-			<div class="main-slider__slide">
-				<div class="main-slider__img"></div>
-				<div class="radial-pulse">
-					<div class="radial-pulse__text1">25%</div>
-					<div class="radial-pulse__text2">Новоселам</div>
+		<div class="img-slider">
+			<div class="img-slider__slide">
+				<div class="img-slider__img">
+					<div class="radial-pulse">
+						<div class="radial-pulse__text1">25%</div>
+						<div class="radial-pulse__text2">Новоселам</div>
+					</div>
 				</div>
 			</div>
-			<div class="main-slider__slide">
-				<div class="main-slider__img"></div>
-				<div class="radial-pulse">
-					<div class="radial-pulse__text1">30%</div>
-					<div class="radial-pulse__text2">Пенсионерам</div>
+			<div class="img-slider__slide img-slider__slide_old">
+				<div class="img-slider__img">
+					<div class="radial-pulse">
+						<div class="radial-pulse__text1">30%</div>
+						<div class="radial-pulse__text2">Пенсионерам</div>
+					</div>
 				</div>
 			</div>
-			<div class="main-slider__slide">
-				<div class="main-slider__img"></div>
-				<div class="radial-pulse">
-					<div class="radial-pulse__text1">25%</div>
-					<div class="radial-pulse__text2">Новоселам</div>
+			<div class="img-slider__slide 
+			img-slider__slide_children">
+				<div class="img-slider__img">
+					<div class="radial-pulse">
+						<div class="radial-pulse__text1">25%</div>
+						<div class="radial-pulse__text2">Новоселам</div>
+					</div>
 				</div>
 			</div>
-		</div>		
+		</div>			
 		<div class="calculator">
-			<form action="" class="calculator__form flex">
+			<form action="" class="calculator__form">
 				<div class="calculator__caption">Зацените цену!</div>
 				<div class="calculator__inputs flex">
 					<div class="calculator__input-wr">
 						<div class="calculator__label">Площадь:</div>
-						<input class="calculator__input calculator__input_area" type="text" name="area" value="14" placeholder="10 м&sup2;">
+						<input class="calculator__input calculator__input_area" type="text" name="area" value="10 м&sup2;">
 					</div>
 					<div class="calculator__input-wr">
 						<div class="calculator__label">Светильников:</div>
-						<input class="calculator__input calculator__input_lights" type="text" name="area" value="1" placeholder="1 шт.">
+						<input class="calculator__input calculator__input_lights" type="text" name="area" value="1 шт.">
 					</div>
 				</div>
-				<div class="calculator__price">4 500</div>
+				<div class="calculator__price">4 500 <span>руб.</span></div>
 				<input class="calculator__input-price" type="hidden" name="quickPrice" value="">
-				<button class="button">
+				<a href="#order" data-fancybox="" class="button button_two-rows">
 					<div class="button__text1">Вызвать замерщика</div>
 					<div class="button__text2">И получить скидку</div>
-				</button>
+				</a>
 			</form>
 		</div>
 	</div>

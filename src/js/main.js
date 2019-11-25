@@ -31,6 +31,20 @@ $(document).ready(function(){
 		$(this).closest('li').find('.sub-menu').slideToggle('300');
 	});
 	
+	 $('.menu li.sub-menu-item-has-children>a').click(function(e){
+		if(window.innerWidth>1279)return ;
+        e.preventDefault();
+        $('.sub-menu ul').not($(this).closest('li').find(' ul')).slideUp('300');	
+		$(this).closest('li').find('ul:first').slideToggle('300');
+    }); 
+    
+    $('.menu li.small-sub-menu-item-has-children>a').click(function(e){
+		if(window.innerWidth>1279)return ;
+        e.preventDefault();
+        $('.sub-menu ul').not($(this).closest('li').find(' ul')).not($(this).closest('li').closest('ul')).slideUp('300');	
+		$(this).closest('li').find('ul:first').slideToggle('300');
+    });
+	
 	
 // 	calculator
 	
@@ -85,7 +99,7 @@ $(document).ready(function(){
 	
 // 	slick-slider	
 	
-	$('.main-slider').slick({
+	$('.img-slider').slick({
 		infinite: true,
 		slidesToShow: 1,
 		dots: false,
@@ -98,6 +112,13 @@ $(document).ready(function(){
 		infinite: true,
 		slidesToShow: 1,
 		dots: true,
+		arrows: true,
+	});
+	
+	$('.examples').slick({
+		infinite: true,
+		slidesToShow: 1,
+		dots: false,
 		arrows: true,
 	});
 	
@@ -120,6 +141,13 @@ $(document).ready(function(){
 			  }
 			},
 		]
+	});
+	
+	//seotext open
+
+	$('.more-info').click(function(e){
+		e.preventDefault();
+		$(this).parent().parent().addClass('open');
 	});
 	
 	

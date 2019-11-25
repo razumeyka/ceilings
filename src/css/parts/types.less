@@ -1,17 +1,49 @@
 /*course-types*/
 
 .types-screen {
-	padding: 65px 0 45px;
+	background: #f7f7f7;
+	padding: 82px 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.types-screen__bg {
+    background-color: #fff;
+    width: 49%;
+    height: 200%;
+    position: absolute;
+    top: -200px;
+    left: -197px;
+    transform: rotate(13deg);
+}
+
+.types-screen__lamp {
+	background: url(../../images/lamps-1.jpg) no-repeat center;
+	width: 120px;
+	height: 420px;
+	position: absolute;
+	top: 0;
+	left: -55px;
 }
 
 .types-screen .wrapper {
 	flex-wrap: nowrap;
+	position: relative;
 }
 
 .types-screen__text {
 	box-sizing: border-box;
 	flex: 1;
 	padding: 0 50px 0 0;
+}
+
+.types-screen__content {
+	height: 270px;
+	overflow: hidden;
+}
+
+.types-screen__content.open {
+	overflow-y: scroll;
 }
 
 .types-screen__button {
@@ -50,7 +82,7 @@
 	width: 100%;
 	box-sizing: border-box;
 	background: rgba(0, 0, 0, 0.749);
-	padding: 20px;
+	padding: 15px 15px 20px;
 	font-weight: 500;
 	text-align: center;
 }
@@ -62,7 +94,7 @@
 .plates-line__caption {
 	font-size: 18px;
 	color: rgb(255, 255, 255);
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 .plates-line__price {
@@ -71,7 +103,7 @@
 	border-radius: 3px;
 	background-color: rgb(255, 255, 255);
 	line-height: 30px;
-	padding: 0 10px;
+	padding: 0 15px;
 }
 
 
