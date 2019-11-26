@@ -117,45 +117,44 @@
 
 @media screen and (max-width: 1279px) { 
 	
-	.plates {
-		margin: 0 -10px;
+	.types-screen .wrapper {
+		flex-direction: column;
+		align-items: center;
 	}
 	
-	.plates__plate { 
-		padding: 5px 10px 15px;
+	.types-screen__content {
+		height: 100px;
+	}
+
+	.types-screen__text, .types-screen .caption_left, .types-screen .description_left  {
+		text-align: center;
+		padding: 0;
 	}
 	
-	.plates__caption{
-		font-size: 17px;
+	.types-screen__button {
+		margin: 40px 0;
 	}
 	
-	.courses-screen {
-		padding: 45px 0 35px;
+	.types-screen__plates {
+		width: 100%;
 	}
 }
 
 @media screen and (max-width: 1023px) {
-	.courses-screen .wrapper {
-		flex-wrap: nowrap;
-		flex-direction: column-reverse;
-	}
 	
-	.courses-screen__types {
-		width: 100%;
+	.plates-line__item {
+		width: 50%;
 	}
-	
-	.plates__plate-wr{
-		padding: 10px 15px 20px;
-	}
-	
 	
 }
 
 @media screen and (max-width: 767px) {
-	.plates__plate {
-		width: 50%;
-	}
 	
+	.plates-line__item {
+		width: 100%;
+		max-width: 450px;
+		margin: 0 auto;
+	}
 }
 
 @media screen and (max-width: 639px) {

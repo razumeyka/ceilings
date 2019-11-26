@@ -3,16 +3,17 @@
 .partners {
     background: #e6e6e6;
     padding: 75px 0;
+	overflow: hidden;
 }
 
 .partners__inner {
-    margin: 0 -15px;
+    margin: -15px;
 }
 
 .partners__item{
     box-sizing: border-box;
     width: 16.6666%;
-    padding: 0 15px;
+    padding: 15px;
 }
 
 .partners__partner {
@@ -42,3 +43,35 @@
 .partners__item_ecola .partners__partner {
 	background-position: -175px 0; 
 }
+
+/*media*/ 
+
+@media screen and (max-width: 1279px) {
+	.partners__inner {
+		max-width: 640px;
+		margin: -15px auto;
+	}
+	
+    .partners__item {
+		width: 33.3333%;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+    .partners__inner {
+		margin: -15px;
+	}
+}
+
+@media screen and (max-width: 639px) {
+	
+    .partners__item {
+		width: 100%;
+	}
+	
+}
+

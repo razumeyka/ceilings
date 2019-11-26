@@ -233,10 +233,10 @@ header .menu li:last-child a {
 
 .burger {
     display: none;
-    width: 50px;
-    height: 50px;
+    width: 32px;
+    height: 32px;
     position: relative;
-	margin: auto 0;
+    margin: auto 0 auto 30px;
 }
 
 .burger span, .burger span::before, .burger span::after {
@@ -245,10 +245,10 @@ header .menu li:last-child a {
     border-radius: 1px;
     height: 3px;
     width: 26px;
-    background: #ffffff;
+    background: #000000;
     position: absolute;
-    top: 16px;
-    right: 12px;
+    top: 7px;
+    right: 3px;
     transition: all .2s ease-in-out;
     border-radius: 10px;
 }
@@ -282,11 +282,14 @@ header .menu li:last-child a {
 /*media*/ 
 
 @media screen and (max-width: 1279px) {
+	.button_header {
+		display: none;
+	}
 	   
     header .navbar {
         display: none;
         position: absolute;
-        top: 45px;
+        top: 0;
         left: 0;
         background: white;
         width: 100%;
@@ -300,10 +303,18 @@ header .menu li:last-child a {
     header .menu>li>a {
         box-sizing: border-box;
         color: #000000;
-        border-bottom: 1px solid #000000;
+        border-top: 1px solid #000000;
 		text-align: center;
         width: 100%;
     }
+	
+	header .menu li:first-child a {
+	   padding-left: 22px;
+	}
+
+	header .menu li:last-child a {
+	   padding-right: 22px;
+	}
     
     header .menu li:hover .sub-menu {
         display: none;
@@ -346,10 +357,31 @@ header .menu li:last-child a {
 }
 
 @media screen and (max-width: 767px) {
-    
+	.header-first__geo {
+		margin: 0 auto;
+	}
+	
+    .header-first__mail {
+		display: none;
+	}
+	
+	.header-second .wrapper {
+		flex-direction: column;
+	}
+	
+	.logo {
+		margin: 0 auto;
+	}
+	
+	.column-right {
+		justify-content: space-between;
+	}
 }
 
 @media screen and (max-width: 639px) {
-   
+   .logo {
+		width: 340px;
+		height: 60px;
+	}
 	
 }

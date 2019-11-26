@@ -1,5 +1,6 @@
 .form-screen {
     background: url(../../images/red-bg.jpg) no-repeat center;
+	background-size: cover;
     padding: 50px 0 45px;
 }
 
@@ -17,7 +18,7 @@
 .wpcf7-form_row {
 	display: flex;
 	flex-wrap: nowrap;
-	margin: 0 -15px;
+	margin: -15px;
 }
 
 .wpcf7-form-control-wrap {
@@ -28,7 +29,7 @@
 
 .wpcf7-form-control-wrap_row {
 	width: 25%;
-	padding: 0 15px;
+	padding: 15px;
 	margin: 0;
 }
 
@@ -66,44 +67,31 @@ span.wpcf7-not-valid-tip {
 }
 
 @media screen and (max-width: 1023px) {
-    .wpcf7-form {
+	.form-screen__caption {
+		text-align: center;
+	}
+	
+	.form-screen__after-caption {
+		text-align: center;
+	}
+	
+    .wpcf7-form_row {
 		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
 	}
 	
-	.wpcf7-form-control-wrap {
-		width: 50%;
-		padding: 10px;
-		border: none;
-	}
-	
-	.wpcf7-form-control {
-		border: 2px solid #e0e0e0;
-	}
-	
-	.button.form__button_home {
-		max-width: none;
+	.wpcf7-form-control-wrap_row {
+		width: 100%;
+		max-width: 500px;
 	}
 }
 
 @media screen and (max-width: 767px) {
-    .wpcf7-form-control-wrap {
-		width: 100%;
-		padding: 10px 0;
-	}
+    
 }
 
 @media screen and (max-width: 639px) {
     
-	.form{
-	    padding: 35px 30px;
-	}
-	
-	.form__after-caption{
-		display: none;
-	}
-	
-	.form__caption{
-		margin-bottom: 10px;
-	}
 	
 }
