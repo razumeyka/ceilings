@@ -19,9 +19,7 @@
 .partners__partner {
     display: block;
 	background: url(../../images/brands.png) no-repeat -875px 0;
-    width: 175px;
-    height: 175px;
-    margin: 0 auto;
+	width: 100%;
 }
 
 .partners__item_pongs .partners__partner {
@@ -33,11 +31,11 @@
 }
 
 .partners__item_clipso .partners__partner {
-	background-position: -350px 0;
+	background-position: 0 0;
 }
 
 .partners__item_renolit .partners__partner {
-    background-position: 0 0;
+    background-position: -350px 0;
 }
 
 .partners__item_ecola .partners__partner {
@@ -48,17 +46,14 @@
 
 @media screen and (max-width: 1279px) {
 	.partners__inner {
-		max-width: 640px;
-		margin: -15px auto;
-	}
-	
-    .partners__item {
-		width: 33.3333%;
+		margin: -15px;
 	}
 }
 
 @media screen and (max-width: 1023px) {
-	
+	.partners__item {
+		width: 33.3333%;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -70,7 +65,7 @@
 @media screen and (max-width: 639px) {
 	
     .partners__item {
-		width: 100%;
+		width: 50%;
 	}
 	
 }

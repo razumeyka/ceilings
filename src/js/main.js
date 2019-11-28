@@ -2,6 +2,7 @@
 @@include('./lib/wpcf7.js')
 @@include('./lib/jquery.spincrement.min.js')
 @@include('./lib/slick.js')
+@@include('./lib/slider.js')
 
 $(document).ready(function(){
 	
@@ -58,7 +59,7 @@ $(document).ready(function(){
 		if(rez == "NaN"){
 			rez = "";
 		}
-		parcalc.find('.calculator__price').html(rez);
+		parcalc.find('.calculator__price-amount').html(rez);
 	});
 	$('form').on('reset',function(){
 		var f=this;
@@ -72,7 +73,33 @@ $(document).ready(function(){
 	$(window).resize(function(){
 		$('.plates-line__inner').css('height', $('.plates-line__inner').width() + 'px');
 	});
-	$(window).resize();
+	
+//seotext open
+	
+	$(window).resize(function(){
+		$('.more-info').removeClass('open');
+		var h1=$('.types-screen__content p:eq(1)').height();
+		var h2=$('.exclusive-screen__text .caption').height();
+		var h3=$('.exclusive-screen__text p:eq(1)').height();
+		$('.exclusive-screen__text').css('height', (h2 + h3 + 27) + 'px');
+		$('.types-screen__content').removeClass('open').css('height', h1 + 'px');
+	});
+	
+	$('.types-screen .more-info').click(function(){
+		if(window.innerWidth > 1279) {
+			$(this).addClass('open');
+			$(this).parent().parent().addClass('open');
+		} else {
+			$(this).addClass('open');
+			$(this).parent().parent().css('height', 'auto');
+		}
+	});
+	
+	$('.exclusive-screen .more-info').click(function(){
+		$(this).parent().parent().css('height', 'auto');
+		$(this).addClass('open');
+	});
+
 	
 // figures
 	
@@ -120,6 +147,14 @@ $(document).ready(function(){
 		slidesToShow: 1,
 		dots: false,
 		arrows: true,
+		responsive: [
+			{
+			  breakpoint: 768,
+			  settings: {
+				arrows: false,
+			  }
+			},
+		]
 	});
 	
 	$('.reviews').slick({
@@ -132,6 +167,7 @@ $(document).ready(function(){
 			  breakpoint: 1024,
 			  settings: {
 				slidesToShow: 2,
+				arrows: false,
 			  }
 			},
 			{
@@ -143,12 +179,12 @@ $(document).ready(function(){
 		]
 	});
 	
-	//seotext open
-
-	$('.more-info').click(function(e){
-		e.preventDefault();
-		$(this).parent().parent().addClass('open');
+// plates height
+	
+	$(window).resize(function(){
+		$('.partners__partner').css('height', $('.partners__partner').width() + 'px');
 	});
+	
 	
 	
 	$(window).resize();

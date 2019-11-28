@@ -25,7 +25,7 @@
 }
 
 .reviews_home {
-    margin: 25px -25px 40px;
+    margin: 25px -25px;
 }
 
 .reviews__item {
@@ -76,11 +76,6 @@
 .buttons {
 	width: 100%;
 	justify-content: center;
-	margin: -15px;
-}
-
-.reviews__buttons {
-	margin-top: 45px;
 }
 
 .buttons__button {
@@ -91,7 +86,9 @@
 /*media*/ 
 
 @media screen and (max-width: 1279px) {
-    
+    .reviews-screen .slick-prev, .reviews-screen .slick-next {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 1023px) {
