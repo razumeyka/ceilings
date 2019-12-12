@@ -22,9 +22,10 @@
 }
 
 .wpcf7-form-control-wrap {
-	box-sizing: border-box;
-    display: block;	
-	margin: 10px 0;
+    box-sizing: border-box;
+    display: block; 
+    padding: 15px;
+    width: 25%;
 }
 
 .wpcf7-form-control-wrap_row {
@@ -51,7 +52,7 @@
 }
 
 span.wpcf7-not-valid-tip {
-    color: #b00089!important;
+    color: #bdbdbd!important;
     font-size: 12px!important;
 }
 
@@ -59,12 +60,16 @@ span.wpcf7-not-valid-tip {
 	display:none!important 
 }
 
+.wpcf7-form-control-wrap .button_pulse{
+    max-height: 56px;
+}
+
 
 /*media*/ 
 
 @media screen and (max-width: 1279px) {
     
-	.wpcf7-form-control-wrap_row { 
+	.wpcf7-form-control-wrap { 
 		padding: 10px;
 	}
 	
@@ -92,13 +97,13 @@ span.wpcf7-not-valid-tip {
 		align-items: center;
 	}
 	
-	.wpcf7-form-control-wrap_row {
+	.wpcf7-form-control-wrap {
 		width: 100%;
 		max-width: 430px;
 	}
 	
 	.form-screen .button_pulse{
-		padding: 21px 10px 20px;
+		padding: 21px 10px 20px; 
 	}
 	
 }
