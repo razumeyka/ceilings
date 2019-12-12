@@ -2,13 +2,13 @@
 	box-sizing: border-box;
 	background: url(../images/mainscreen-bg.jpg) no-repeat center;
 	background-size: cover;
-    padding: 75px 0;
+    padding: 75px 0 65px;
 	position: relative;
 	overflow: hidden;
 }
 
 .reviews-screen__bg {
-	background: rgba(255, 255, 255,0.8);
+	background: rgba(255, 255, 255,0.85);
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -87,7 +87,37 @@
 
 @media screen and (max-width: 1279px) {
     .reviews-screen .slick-prev, .reviews-screen .slick-next {
-		display: none;
+		display: none!important;
+	}
+	
+	.reviews-screen { 
+		padding: 55px 0 45px;
+	}
+	
+	.reviews__item {
+		padding: 10px 15px;
+	}
+	
+	.reviews_home {
+		margin: 15px -15px;
+	}
+	
+	.buttons__button {
+        margin: 10px;
+	}
+	
+	.reviews__photo { 
+		width: 60px;
+		height: 60px;
+		margin-right: 15px;
+	}
+		
+	.reviews__name {
+		font: 500 17px Muller;
+	}	
+	
+	.reviews__text { 
+		padding: 30px;
 	}
 }
 
@@ -97,8 +127,22 @@
 
 @media screen and (max-width: 767px) {
     
+	.description {
+		font-size: 16px;
+	}
+	
+	.reviews__photo{
+		display:none;
+	}
+	
+	
 }
 
 @media screen and (max-width: 639px) {
     
+	.buttons__button {
+		width: 140px;
+		font-size: 14px;
+	}
+	
 }

@@ -31,7 +31,7 @@
 }
 
 .exclusive-screen  .slick-next {
-    background-position: -301px -122px;
+    background-position: -301px -121px;
 	left: auto;
     right: calc(50% - 115px );
 }
@@ -51,7 +51,7 @@
 .exclusive__inner {
 	display: flex;
     box-sizing: border-box;
-	background: url(../images/mainscreen-bg.jpg) no-repeat center;
+	background: #dedede;
 	background-size: cover;
 	border-radius: 3px;
 	text-decoration: none;
@@ -60,6 +60,7 @@
 	height: 100%;
 	outline: none;
 	position: relative;
+	overflow: hidden;
 }
 
 .exclusive__item_link .exclusive__inner {
@@ -70,7 +71,7 @@
 
 .exclusive__item_link .exclusive__inner:before {
 	content: "";
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.3);
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -80,6 +81,10 @@
 
 
 @media screen and (min-width: 1023px) {
+
+	.exclusive-screen { 
+		padding: 57px 0 77px;
+	}
 
 	.exclusive__item:nth-child(6n-1) {
 		margin-top: -80px;
@@ -98,13 +103,15 @@
 	.exclusive__item:nth-child(6n) {
 		height: 335px;
 	}
+	
+	
 }
 
 .exclusive__text {
     box-sizing: border-box;
     border: 1px solid #fff;
     border-radius: 3px;
-    background-color: rgba(0,0,0,.702);
+    background-color: rgba(0,0,0,.7);
 	width: 265px;
     padding: 35px;
 	position: relative;
@@ -138,34 +145,53 @@
 }
 
 @media screen and (max-width: 1279px) {
-	  
 	
+	.exclusive-screen { 
+		padding: 57px 0 77px;
+	}
+	
+	.exclusive {
+		margin: 0 -15px;
+	}
+	
+	.exclusive__item{
+	    padding: 15px; 
+	}
 }
 
-@media screen and (max-width: 1023px) {
-	.exclusive__item {
-		width: 50%;
-	}
+@media screen and (max-width: 1023px) { 
 	
 	.exclusive__item:nth-child(6n-2), 
 	.exclusive__item:nth-child(6n) {
 		display: none
+	} 
+	
+	.exclusive__item{ 
+		width: 50%;
 	}
+	
 }
 
 @media screen and (max-width: 767px) {
+	.exclusive__text { 
+		width: 245px;
+		padding: 35px 20px;
+	}
+	
+	.exclusive-screen__text p {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 639px) {
 	.exclusive__item {
 		width: 100%;
-		max-width: 450px;
+		max-width: 360px;
 		margin: 0 auto;
 	}
 	
 	.exclusive__item:nth-child(6n-4) {
 		display: none;
 	}
-}
-
-@media screen and (max-width: 639px) {
-	
 }
 

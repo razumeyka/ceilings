@@ -70,11 +70,11 @@
 }
 
 .small-plates__item_quality .small-plates__icon {
-	background-position: -110px -193px;
+	 background-position: -108px -195px;
 }
 
 .small-plates__item_presents .small-plates__icon {
-    background-position: -209px -193px;
+    background-position: -211px -193px;
 }
 
 .small-plates__text {
@@ -167,7 +167,7 @@
 	font-size: 26px;
 	font-weight: 700;
 	text-align: center;
-	color: rgb(240, 240, 240);
+	color: #fff;
 }
 
 .calculator__inputs {
@@ -245,7 +245,14 @@
 
 @media screen and (max-width: 1023px) {
 	.main-screen__bg {
-		display: none;
+		transform: none;
+		right: 0;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		height: auto;
+		width: 100%;
 	}
 	
 	.main-screen .wrapper {
@@ -269,20 +276,34 @@
 		width: 100%;
 		max-width: 480px;
 	}
-
+	
+	.main-screen__after-caption{
+		margin-bottom:30px;
+	}
+	
 }
 
 @media screen and (max-width: 767px) {
 	.main-screen__caption {
-		font-size: 44px;
+		font-size: 62px;
+		margin-bottom:10px;
+	}
+	
+	.main-screen__after-caption {
+		font-size: 21px;
+	}
+}
+
+@media screen and (max-width: 639px) {	
+
+	.main-screen__caption {
+		font-size: 52px; 
 	}
 	
 	.main-screen__after-caption {
 		font-size: 16px;
 	}
-}
-
-@media screen and (max-width: 639px) {	
+	
 	.small-plates {
 		margin: 0px -5px;
 	}
@@ -292,10 +313,27 @@
 	}
 	
 	.small-plates__content {
-		padding: 10px;
+		padding: 15px 10px 15px;
 	}
 	
 	.small-plates__icon {
-		margin: 0 auto 15px;
+		margin: 0 auto 10px;
+	}
+	
+	.small-plates__text{
+		font-size:13px;
+	}
+	
+	.small-plates__icon{
+		background-size:900px auto;
+		background-position: -4px -171px;
+	}
+	
+	.small-plates__item_quality .small-plates__icon{ 
+		background-position: -93px -172px;
+	}
+	
+	.small-plates__item_presents .small-plates__icon{
+		background-position: -188px -170px;
 	}
 }

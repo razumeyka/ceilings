@@ -47,6 +47,10 @@ button,input,select,textarea{
     font-size: 18px;
 } 
 
+sup{
+    font-size: 0.6em;
+}
+
 .wrapper {
     max-width:1200px;
     padding:0 40px;
@@ -96,11 +100,9 @@ a {
 .more-info {
 	color: rgb(80, 80, 80);
 	cursor: pointer;
-}
-
-.more-info span {
 	text-decoration: underline;
-}
+	padding-left: 10px;
+} 
 
 .more-info.open {
 	display: none;
@@ -124,6 +126,11 @@ a {
     text-align: center;
 	position: relative;
 	padding: 16px 10px 15px;
+}
+
+.button:hover{
+	background: #9b0000;
+	top:2px;
 }
 
 .button_with-icon {
@@ -156,7 +163,8 @@ a {
 	font-size: 13px;
 }
 
-.button_black {
+.button_black,
+.button_black:hover	{
 	background-color: rgb(0, 0, 0);
 }
 
@@ -167,6 +175,10 @@ a {
 	font-weight: 700;
 	text-transform: uppercase;
 	animation: button-pulse 1s infinite;
+}
+
+.button_pulse:hover{
+	background:#000;
 }
  
 @keyframes button-pulse {
@@ -205,12 +217,13 @@ a {
 
 @media screen and (max-width: 767px) {
     .caption {
-		font-size: 42px;
+		font-size: 44px;
 	}
 
 }
 
 @media screen and (max-width: 639px) {
+	
 	
 	
 }

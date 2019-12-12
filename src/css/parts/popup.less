@@ -1,18 +1,28 @@
 #order {
     display: none;
-	background: #000000;
+    background: #af0000;
     max-width: 360px;
     text-align: center;
+    border-radius: 3px;
+    padding: 40px 50px 40px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-.popup-caption {
-	font-size: 20px;
-	color: rgb(255,255,255);
-	margin-bottom: 20px;
+.popup-caption { 
+    color: #fff;
+    margin-bottom: 10px;
+    font: 900 34px/1.2 Muller;
+    text-transform: uppercase;
 }
 
+#order .wpcf7-form-control-wrap{
+	    margin: 13px 0;
+}
 
-
+#order .button{
+	margin-top: 10px;
+    padding: 21px 10px 20px;
+}
  
 
 @media screen and (max-width: 1023px) {
@@ -28,8 +38,10 @@
 
 
 @media screen and (max-width: 639px) {
-
 	
+	#order{
+		padding: 40px;
+	}
 
 
 }

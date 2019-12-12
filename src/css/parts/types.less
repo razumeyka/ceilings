@@ -75,7 +75,7 @@
 .plates-line__inner {
 	display: flex;
     align-items: flex-end;
-	background: url(../images/mainscreen-bg.jpg) no-repeat center;
+	background: #fff;
 	background-size: 100% 100%;
 	border-radius: 3px;
 	box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
@@ -126,6 +126,10 @@
 
 @media screen and (max-width: 1279px) { 
 	
+	.types-screen {
+		padding: 62px 0;
+	}
+	
 	.types-screen .wrapper {
 		flex-direction: column;
 		align-items: center;
@@ -140,8 +144,12 @@
 		padding: 0;
 	}
 	
+	.types-screen__text{
+		margin-bottom:30px;
+	}
+	
 	.types-screen__button {
-		margin: 40px 0;
+		display: none;
 	}
 	
 	.types-screen__plates {
@@ -158,32 +166,38 @@
 		display: none;
 	}
 	
-	.plates-line__item {
-		width: 50%;
+	.plates-line__caption {
+		font-size: 17px;
 	}
+	
 	
 }
 
 @media screen and (max-width: 767px) {
 	.types-screen__button {
 		display: none;
-	}
-	
-	.types-screen__plates {
-		margin-top: 40px;
-	}
+	} 
 	
 	.plates-line__item {
-		width: 100%;
-		max-width: 450px;
-		margin: 0 auto;
+		width: 50%;
 	}
+	
+	.types-screen__content p {
+		font-size: 16px;
+	}
+	
 	
 }
 
 @media screen and (max-width: 639px) {
 	
 	
+	.plates-line__item {
+		width: 100%;
+		max-width: 330px;
+		margin: 0 auto;
+		padding: 20px 0;
+	}
 	
 }
 

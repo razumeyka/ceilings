@@ -77,12 +77,12 @@ $(document).ready(function(){
 //seotext open
 	
 	$(window).resize(function(){
-		$('.more-info').removeClass('open');
-		var h1=$('.types-screen__content p:eq(1)').height();
+		$('.more-info').removeClass('open'); 
+		var h1=$('.types-screen__content').find('p').height(); 
 		var h2=$('.exclusive-screen__text .caption').height();
-		var h3=$('.exclusive-screen__text p:eq(1)').height();
+		var h3=$('.exclusive-screen__text').find('p').height(); 
 		$('.exclusive-screen__text').css('height', (h2 + h3 + 27) + 'px');
-		$('.types-screen__content').removeClass('open').css('height', h1 + 'px');
+		$('.types-screen__content').css('height', h1 + 'px'); 
 	});
 	
 	$('.types-screen .more-info').click(function(){
@@ -171,7 +171,7 @@ $(document).ready(function(){
 			  }
 			},
 			{
-			  breakpoint: 768,
+			  breakpoint: 640,
 			  settings: {
 				slidesToShow: 1,
 			  }
