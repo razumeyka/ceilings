@@ -1,0 +1,44 @@
+.breadcrumbs {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative; 
+}
+
+.breadcrumbs li a {
+    display: inline-block; 
+    color: #000; 
+	text-decoration: underline;
+}
+
+.breadcrumbs li:last-child {
+    color: #8c8c8c;
+}
+
+.breadcrumbs li:first-child span{
+	width:18px;
+	height:18px;
+	display: inline-block;
+	background:url(../images/sprites.svg) no-repeat -693px -128px;
+}
+
+.breadcrumbs li.arrow{
+	color:#8c8c8c;
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+	.breadcrumbs { 
+		font-size: 12px;
+	}
+	
+}

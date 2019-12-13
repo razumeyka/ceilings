@@ -1,0 +1,109 @@
+.right-menu{
+	list-style: none;
+    padding: 13px 20px;
+	margin:0;
+    background: #f2f2f2;
+    border-radius: 3px;
+    border: 1px solid #d4d4d4;
+}
+
+.right-menu li{
+	position: relative;
+}
+
+.right-menu li:before{
+	content:'';
+	position: absolute;
+	left:0;
+	top:7px;
+	background:#fff url(../images/sprites.svg) no-repeat 2px -405px;
+	width: 50px;
+	height: 50px;
+}
+
+.right-menu li a{
+	text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 15px 10px 14px 70px; 
+    border-bottom: 1px solid #cdcdcd;
+    display: block;
+    min-height: 65px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center; 
+}
+
+.right-menu li:last-child a{
+	border:none;
+}
+
+.right-menu li a:hover {
+	color: rgb(175, 0, 0); 
+}
+
+.right-menu li a:first-letter {
+	color: rgb(175, 0, 0); 
+}
+
+
+li.right-menu__item_calculator:before{
+	background-position: 2px -405px;
+}
+li.right-menu__item_constructor:before{
+	background-position: -45px -405px;
+}
+li.right-menu__item_payment:before{
+	background-position: -96px -405px;
+}
+li.right-menu__item_delivery:before{
+	background-position: -147px -405px;
+}
+li.right-menu__item_measure:before{
+	background-position: -199px -405px;
+}
+li.right-menu__item_fast:before{
+	background-position: -251px -405px;
+}
+li.right-menu__item_production:before{
+	background-position: -301px -405px;
+}
+li.right-menu__item_workers:before{
+	background-position: -350px -405px;
+}
+li.right-menu__item_warranty:before{
+	background-position: -398px -405px;
+}
+li.right-menu__item_certificates:before{
+	background-position: -449px -405px;
+}
+li.right-menu__item_return:before{
+	background-position: -502px -405px;
+}
+li.right-menu__item_dealers:before{
+	background-position: -553px -405px;
+}
+li.right-menu__item_repairs:before{
+	background-position: -602px -405px;
+}
+li.right-menu__item_jobs:before{
+	background-position: -653px -405px;
+}
+
+
+
+
+
+/*media*/
+
+@media screen and (max-width: 1279px) {
+	
+	.right-menu{
+		display:none;
+	}
+}
+
+
+@media screen and (max-width: 1023px) {}
+@media screen and (max-width: 767px) {}
+@media screen and (max-width: 639px) {} 

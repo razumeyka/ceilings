@@ -192,4 +192,39 @@ $(document).ready(function(){
 		ww=0;
 		$(window).resize();
 	},400)
+
+//stock timer
+ 
+var deadline = '2019-12-16 20:20';
+function getTimeRemaining(endtime){
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor( (t/1000) % 60 );
+  var minutes = Math.floor( (t/1000/60) % 60 );
+  var hours = Math.floor( (t/(1000*60*60)) % 24 );
+  var days = Math.floor( t/(1000*60*60*24) );
+  return {
+   'total': t,
+   'days': days,
+   'hours': hours,
+   'minutes': minutes,
+   'seconds': seconds
+  };
+}
+
+function updateClock(){
+  var t = getTimeRemaining(deadline);
+  $('.timer__number_days').html(t.days);
+  $('.timer__number_hours').html(('0' + t.hours).slice(-2));
+  $('.timer__number_minutes').html(('0' + t.minutes).slice(-2));
+  $('.timer__number_seconds').html(('0' + t.seconds).slice(-2));
+  if(t.total<=0){
+   clearInterval(timeinterval);
+  }
+}
+
+updateClock(); // запустите функцию один раз, чтобы избежать задержки
+var timeinterval = setInterval(updateClock,1000);
+
+	
+	
 }); 

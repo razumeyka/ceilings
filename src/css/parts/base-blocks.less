@@ -40,6 +40,7 @@ body{
 	color: rgb(0, 0, 0);
 	line-height:1.4; 
 	min-width: 360px;
+	background: #f7f7f7;
 }
 
 button,input,select,textarea{
@@ -72,6 +73,94 @@ a {
 	color: rgb(0, 0, 0);
 	text-decoration: none;
 }
+
+
+
+/**/
+
+.content h2{
+	font-size: 30px;
+	font-weight: 900;
+	margin: 35px 0 20px;
+	line-height: 1;
+}
+
+.content h3,
+.content h4,
+.content h5,
+.content h6{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 25px 0 15px;
+	line-height: 1;
+}
+
+.content p{
+	font-size: 17px;
+    color: #505050;
+}
+
+.content a{
+	color: #af0000;
+    text-decoration: underline;
+}
+
+.content img{
+	max-width:100%;
+	height: auto;
+}
+
+.content ul{
+    font-size: 18px;
+    padding: 0;
+    list-style: none;
+}
+
+.content ul li{
+	padding: 7px 0 7px 30px;
+    position: relative;
+}
+
+.content ul li:before{
+    content: '';
+    background: #af0000;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 13px;
+    left: 0;
+    border-radius: 50%;
+}
+
+.content ol{
+    font-size: 18px;
+    padding: 0;  
+	counter-reset: myCounter;
+} 
+
+.content ol li{
+	padding: 4px 0; 
+	list-style: none;
+} 
+
+.content ol li:before{
+    counter-increment: myCounter;
+    content: counter(myCounter) ")";
+    color: #af0000;
+    display: inline-block; 
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-right: 6px;
+    min-width: 27px;
+}
+
+a.content__button{
+	max-width: 230px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/**/
 
 .caption {
     font: 900 50px/1 "Muller";
