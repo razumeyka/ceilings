@@ -1,0 +1,140 @@
+
+.main-city{
+    padding: 80px 0 50px;
+}
+
+.main-city__bg{
+    position: absolute; 
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto; 
+    width: 100%;
+    background-color: rgba(255,255,255,.6);
+}
+
+/*texts*/
+
+.main-city__text{
+	box-sizing: border-box;
+    max-width: 630px;
+}
+
+.main-city__caption{
+    font: 900 52px/1.15 Muller;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+.main-city__after-caption{
+	max-width: 530px;
+	margin: 0 0 40px;
+}
+
+
+/*stock timer*/
+
+.stock-city{
+	background:#fff;
+	border-radius:3px;
+	box-shadow: 0 5px 8px rgba(0,0,0,.15);
+	padding: 20px;	
+	max-width: 530px;
+    box-sizing: border-box;
+}
+
+.stock-city__inner{
+    border: 2px solid #af0000;
+    padding: 21px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+.stock-city__caption{
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.stock-city__timer{
+    margin: 20px auto 0;
+}
+
+.stock-city__timer .timer__number{
+    background: #f7f7f7;
+    border: 1px solid #d4d4d4;
+    font-size: 26px;
+    padding: 14px 0 12px;
+    width: 54px;
+}
+
+.stock-city__timer .timer__dobledots {
+    font-size: 42px;
+    line-height: 64px;
+}
+
+/*happy family*/
+
+.main-city__people {
+    background: url(../images/city-main.png) no-repeat center bottom;
+    background-size: cover;
+    width: 420px;
+    height: 520px;
+    position: absolute;
+    right: 324px;
+    bottom: -45px;
+}
+
+
+
+@media screen and (max-width: 1279px) {
+
+.main-city {
+    padding: 60px 0 50px;
+}
+
+.main-city__people {
+	display: none;
+}
+
+}
+
+@media screen and (max-width: 1023px) {
+
+.stock-city{
+	display: none;
+}
+
+.main-city__text{
+    text-align: center;
+}
+
+.main-city__after-caption {
+    max-width: 480px;
+    margin: 0 auto 30px;
+    font-size: 21px;
+}
+
+}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 639px) {
+
+.main-city__text{
+	width:100%;
+}
+
+.main-city__caption{
+	font-size: 40px;
+}
+
+.main-screen__after-caption{
+    font-size: 16px;
+	line-height: 1.2;
+}
+
+
+}
