@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('template/head.html')
+<body class="home">
+    @@include('template/header.html') 
+    @@include('template/breadcrumbs.html')
+	
+	<div class="wrapper">
+		<div class="two-colums flex"> 
+			<div class="column-left"> 
+				@@include('template/stock.html')
+				@@include('template/right-menu.html')
+			</div>
+			<div class="column-right"> 
+				<div class="content">
+					<h1 class="inner-caption">Отзывы о компании натяжные потолки Новый Стиль</h1> 
+					<p>Компания давно занимается этим видом деятельности. К делу подошли очень серьезно. Начинали с малого материалы покупали индивидуально для единичных заказов, нынешнее руководство самолично производили замеры и монтажи. Благодаря дешевым услугам и непревзойденному качеству, постепенно пришел успех, и объем обращений начал нарастать как снежный ком.</p>
+					<h2>Сертификаты «Отзовик»</h2>
+					<div class="inner-gallery inner-gallery_big flex">
+						<div class="inner-gallery__block">
+							<a href="#"><img src="../images/otzovik.jpg"></a>
+						</div>
+						<div class="inner-gallery__block">
+							<a href="#"><img src="../images/otzovik.jpg"></a>
+						</div> 
+					</div>
+					<p>Методом жесткого отбора подбирались кандидаты на возникшие вакансии, проходили длительное обучение, а затем аттестацию. Таким же образом отбирались и поставщики, ведь хорошие комплектующие на первом месте - так было и так останется всегда. Спустя еще несколько лет запустили свой цех для сварки полотен, благодаря чему появилась возможность осуществлять установку по максимально низкой стоимости. </p>
+					<p>Все положительные факторы привлекли и дилеров. Новый Стиль создает общее впечатление как о лучшей по монтажным работам и производству натяжных потолков в Москве. Если вы в поисках недорого варианта, обратитесь в данную организацию и убедитесь, что она действительно достойная. Для этого нужно всего лишь вызвать замерщика - это бесплатно.</p>
+					<a href="#reviews-form" class="reviews-page__button button">Написать отзыв</a>
+					
+					<div class="review-onpage">
+						<div class="review-onpage__caption">
+							<div class="review-onpage__name">Дмитрий</div>
+							<div class="review-onpage__date">23 октября 2019 в 15:13</div>
+						</div>
+						<div class="review-onpage__text">Всем доброго дня! 10 октября обращался в эту компанию по, естественно, срочному вопросу установки потолков в санузлы. меня оперативно переключили на замерщика Сергея, который сделал все от него зависящее для того, чтобы монтаж был именно в намеченный мною день. Выражаю ему искреннюю благодарность. Бригада, под руководством тоже Сергея (но уже другого) тоже потрудилась на славу, сделали все быстро, четко, без грязи и суеты. каждый знает свое дело. цены весьма приемлемые. Молодцы!!! Спасибо и, безусловно, рекомендую к сотрудничеству данную компанию. с Уважением Дмитрий, р-н Куркино.</div> 
+					</div>
+					<div class="review-onpage">
+						<div class="review-onpage__caption">
+							<div class="review-onpage__name">Ольга</div>
+							<div class="review-onpage__date">20 сентября 2019 в 10:42</div>
+						</div>
+						<div class="review-onpage__text">Вот и я добралась чтоб оставить свой положительный отзыв. Долго не выбирала где заказывать натяжной потолок. Набрала в поскаевеке "натяжные потолки" и Новый стиль Потолков был в первых строчках. Позвонила проконсультировалась вызвали мастера все замерили огласили сумму. Но, мы заказывать не торопились т.к подумали фирма да на первых строчках наверное дорого и стали нам знакомые своих знакомых предлагать. И что же мы услышали что у знакомых и через знакомых получается дороже на 10-20 тысяч. Мы тогда чётко решили брать Новом стиле. И не пожалели, цена нас устроила качество всем всем понравилось. Даже знающие люди (строители) теперь у меня спрашиваю где брали и я с гордостью говорю "Новом стиле Потолков" Фирму рекомендую не пожалеете !</div> 
+					</div>
+					<div class="review-onpage">
+						<div class="review-onpage__caption">
+							<div class="review-onpage__name">A.Z.</div>
+							<div class="review-onpage__date">07 сентября 2019 в 14:38</div>
+						</div>
+						<div class="review-onpage__text">Большое спасибо! Потолок получился хорошенький! Я довольна! Проблем и вопросов не возникло! )</div> 
+					</div>
+					@@include('template/pagination.html')
+					
+					<div class="reviews-form">
+						<a name="reviews-form"></a>
+						<div class="inner-main flex">
+							<div class="inner-main__photo">
+								<div class="inner-main__photo-inner"> 
+									<img src="../images/review-family.jpg">
+								</div>
+							</div> 
+							<div class="inner-main__form">
+								<div class="inner-main__form-inner">
+									<div class="inner-main__caption">Ваш отзыв:</div> 
+									<form class="wpcf7-form wpcf7-form_row"> 
+										<span class="wpcf7-form-control-wrap">
+											<input type="text" name="E-mail" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Имя *">
+										</span>
+										<span class="wpcf7-form-control-wrap">
+											<input type="tel" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="E-mail">
+										</span>
+										<span class="wpcf7-form-control-wrap"> 
+											<textarea name="umessage" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="true" placeholder="Ваш отзыв *"></textarea> 
+										</span>		
+										<span class="wpcf7-form-control-wrap wpcf7-form-control-wrap_row">
+											<button class="form__button button button_black">Оставить отзыв</button>
+										</span>
+									</form>
+								</div>
+							</div> 
+						</div>
+						<div class="reviews-form__message"><strong>Внимание!</strong> Отправленное сообщение появится только после проверки администратором сайта!</div>
+					</div>
+					 
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    @@include('template/form.html')
+    @@include('template/footer.html')
+    @@include('template/popup_form.html')
+</body>
+</html> 
