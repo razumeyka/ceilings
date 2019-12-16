@@ -9,6 +9,17 @@
     @@include('template/exclusive.html')
     @@include('template/advantages.html')
     @@include('template/ready-made.html')
+	<div class="construnctor">
+		<div class="constructor_overlay"></div>
+		<iframe id='constructor' frameborder="0" scrolling="no" width="100%" height="800"></iframe>
+	</div>
+	<script>
+	$(document).ready(function(){
+		$('.constructor_overlay').click(function(){
+			$('#constructor').attr('src','http://kns.potolok-ru.ru/');
+		});
+	});
+	</script>
     @@include('template/partners.html')
     @@include('template/reviews.html')
     @@include('template/form.html')
