@@ -9,13 +9,19 @@
     @@include('template/exclusive.html')
     @@include('template/advantages.html')
     @@include('template/ready-made.html')
-	<div class="construnctor">
-		<div class="constructor_overlay"></div>
-		<iframe id='constructor' frameborder="0" scrolling="no" width="100%" height="800"></iframe>
+	<div class="constructor">
+		<div class="wrapper">
+			<h2 class="caption">Примерьте наш натяжной потолок</h2>
+			<div class="description">Подберите натяжной потолок своей мечты, поэкспериментируйте вместе с семьёй! В конструкторе вы можете выбрать цвет, материал, подсветку и другие параметры потолка. Не забудьте сохранить скриншот и присылайте нам для оценки стоимости работ!</div>
+			<div class="constructor__inner flex">			
+				<div class="constructor__overlay"></div>
+				<iframe id='constructor' frameborder="0" scrolling="no" width="100%" height="575"></iframe>
+			</div>
+		</div>
 	</div>
 	<script>
 	$(document).ready(function(){
-		$('.constructor_overlay').click(function(){
+		$('.constructor__overlay').click(function(){
 			$(this).remove();
 			$('#constructor').attr('src','http://kns.potolok-ru.ru/');
 		});
