@@ -79,9 +79,10 @@
 
 .inner-main__prices{
 	justify-content: center;
-    align-items: center;
-    margin: 12px 0 10px;	
+    align-items: center; 
 }
+
+.inner-main__newprice-wr{}
 
 .inner-main__newprice{
 	color: #fff;
@@ -89,8 +90,14 @@
     line-height: 1;
     font-weight: 700;
     background: #af0000;
-    padding: 7px 13px;
-	position: relative;
+    padding: 7px 13px; 
+}
+
+.inner-main__deployment{ 
+    color: #af0000;
+    font-size: 12px;
+    font-weight: 300; 
+	text-align: left;
 }
 
 .inner-main__oldprice{
@@ -98,15 +105,6 @@
     font-size: 15px;
     text-decoration: line-through;
     padding-left: 10px; 
-}
-
-.inner-main__deployment{
-    position: absolute;
-    color: #af0000;
-    font-size: 12px;
-    font-weight: 300;
-    bottom: -15px;
-    left: 0;
 }
 
 .inner-main__form .wpcf7-form_row{
@@ -241,6 +239,42 @@ ul.ulcols li:before{
 }
 
 
+/*3D catallogs*/
+
+.wp-block-group__inner-container{
+	display: flex;
+	flex-wrap: wrap;
+	margin: -20px;
+	text-align: center;
+}
+
+.wp-block-group__inner-container figure{
+	width:50%;
+	margin:0;
+	padding:20px;
+	box-sizing: border-box;
+}
+
+.wp-block-group__inner-container figure img{}
+
+.content .wp-block-group__inner-container figure a{
+	display: inline-block; 
+    text-decoration: none; 
+    border-radius: 3px;
+    background-color: #af0000; 
+    font-size: 17px;
+    letter-spacing: .5px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    padding: 16px 10px 15px;
+}
+
+.content .wp-block-group__inner-container figure a:hover{
+    background: #9b0000;
+    top: 2px;
+}
+
 
 /*media*/
 
@@ -332,6 +366,10 @@ ul.ulcols li:before{
 		width: 100%;
 		max-width: 370px;
 		margin: 0 auto;
+	}
+	
+	.wp-block-group__inner-container figure {
+		width: 100%;
 	}
 
 } 
