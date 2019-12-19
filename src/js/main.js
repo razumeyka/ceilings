@@ -188,12 +188,6 @@ $(document).ready(function(){
 	
 	
 	$(window).resize();
-	setTimeout(function(){
-		ww=0;
-		$(window).resize();
-	},400)
-
-//stock timer
 
 	
 }); 
