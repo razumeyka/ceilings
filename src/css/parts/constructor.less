@@ -1,0 +1,62 @@
+.constructor{ 
+    padding: 78px 0;
+}
+
+.constructor__inner{
+	margin-top: 30px; 
+	height: 575px;
+	position: relative;
+}
+
+.constructor__overlay{
+    background: url(../../images/constructor-fake.jpg) no-repeat center top; 
+	background-size: contain;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	cursor:pointer;
+}
+
+
+#constructor{ 
+}
+
+
+@media screen and (max-width: 1279px) {
+	
+	.constructor__overlay{
+		background: url(../../images/constructor-fake-m.jpg) no-repeat center; 
+		background-size: cover;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.constructor__overlay:before{
+		content: 'Начать конструирование';
+		background: #af0000;
+		color: #fff;
+		padding: 21px 20px 18px;
+		text-transform: uppercase;
+		font-size: 13px;
+		letter-spacing: 0.8px;
+		border-radius: 3px;
+		box-shadow: 0 0 15px rgba(255, 255, 255, 0.65);
+	}
+	
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+.constructor__inner,
+.constructor__inner iframe{ 
+    height: 705px;
+}
+
+}
+
+
