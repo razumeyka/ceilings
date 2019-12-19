@@ -91,7 +91,7 @@
 
 .menu {
 	flex-wrap: nowrap;
-	justify-content: space-around;
+	justify-content: space-between;
     padding: 0;
     margin: 0;
 }
@@ -106,21 +106,21 @@
 	letter-spacing: 0.6px;
     color: #fff;
     text-transform: uppercase;
-    padding: 19px 22px 16px;
+    padding: 19px 5px 16px;
 	position: relative;
 }
 
 .menu li.menu-item-has-children>a {
-	padding-right: 30px;
+	padding-right: 16px;
 }
 
 .menu li.menu-item-has-children>a:before {
     content: "";
     background: url(../images/sprites.svg) no-repeat -138px -136px;
-    width: 11px;
+    width: 10px;
     height: 9px;
     position: absolute;
-    right: 13px;
+    right: 0;
     top: 0;
     bottom: 0;
     margin: auto 0;
@@ -157,12 +157,14 @@ header .menu>li:last-child>a {
 
 .menu li:hover .sub-menu {
     display: flex;
+	flex-direction: column;
+    max-height: 455px;
 }
 
 .sub-menu__item {
     box-sizing: border-box;
     width: 16.6666%;
-    padding: 0 8px 30px;
+    padding: 0 8px 20px;
     position: relative;
 }
 
