@@ -24,7 +24,7 @@ function initSlider($slider){
 	$slider.find('.slide').first().addClass('active');
 	$slider.find('.controls li').first().addClass('active');
 	$slider.find('.slide').each(function(index){
-		$(this).css({'background':'url("'+$(this).data('background')+'")', 'background-position':'center bottom', 'background-size':'contain'});
+		$(this).css({'background':'url("'+$(this).data('background')+'") no-repeat', 'background-position':'center bottom', 'background-size':'contain',});
 	});
 	$slider.find('.controls li').click(function(){
 		clearInterval(timer);
