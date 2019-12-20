@@ -20,7 +20,7 @@ function nextslide($slider){
 
 function initSlider($slider){
 	var control='<li></li>';
-	$slider.append('<ul class="controls">'+control.repeat($slider.find('.slide').length)+'</ul>');
+	//$slider.append('<ul class="controls">'+control.repeat($slider.find('.slide').length)+'</ul>');
 	$slider.find('.slide').first().addClass('active');
 	$slider.find('.controls li').first().addClass('active');
 	$slider.find('.slide').each(function(index){
