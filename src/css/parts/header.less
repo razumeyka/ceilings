@@ -153,12 +153,12 @@ header .menu>li:last-child>a {
 	padding: 30px calc((100% - 1216px)/ 2) 5px;
     display: none;
     flex-wrap: wrap;
+    max-height: 455px;
 }
 
 .menu li:hover .sub-menu {
     display: flex;
 	flex-direction: column;
-    max-height: 455px;
 }
 
 .sub-menu__item {
@@ -307,6 +307,10 @@ header .menu>li:last-child>a {
         display: none;
     }
     
+	.sub-menu {
+		max-height: none;
+	}
+	
     header .sub-menu {
 		box-shadow: none;
 		position: static;
@@ -408,7 +412,7 @@ header .menu>li:last-child>a {
 
 @media screen and (max-width: 639px) {
    .logo {
-		width: 340px;
+		width: 330px;
 		height: 60px;
 	}
 	
