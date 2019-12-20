@@ -152,13 +152,20 @@ header .menu>li:last-child>a {
     list-style: none; 
 	padding: 30px calc((100% - 1216px)/ 2) 5px;
     display: none;
-    flex-wrap: wrap;
     max-height: 455px;
+    flex-wrap: wrap;
+	flex-direction: column;
 }
 
-.menu li:hover .sub-menu {
-    display: flex;
-	flex-direction: column;
+.menu li:hover .sub-menu { 
+    display: flex; 
+}
+
+@media all and (-ms-high-contrast:none){
+	.sub-menu {  
+	flex-direction: row;
+    max-height: none;
+	} /* IE10 */ 
 }
 
 .sub-menu__item {
