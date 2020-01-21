@@ -55,12 +55,14 @@ $(document).ready(function(){
 		var roofArea = parseInt(parcalc.find('.calculator__input_area').val(), 10)*440	
 		var lightsCount = parseInt(parcalc.find('.calculator__input_lights').val(),10)*400;
 		countPrice = roofArea + lightsCount;
+		if(countPrice<7000)countPrice=7000;
 		var rez = (countPrice+'').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '); // adding a space between thousands
 		if(rez == "NaN"){
 			rez = "";
 		}
 		parcalc.find('.calculator__price-amount').html(rez);
 	});
+	$('.calculator__input_lights').change();
 	$('form').on('reset',function(){
 		var f=this;
 		setTimeout(function(){  
