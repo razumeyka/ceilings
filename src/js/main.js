@@ -101,6 +101,11 @@ $(document).ready(function(){
 		$(this).parent().parent().css('height', 'auto');
 		$(this).addClass('open');
 	});
+	$('.hidden_content .more-info').click(function(){
+		$(this).addClass('open');
+		$(this).closest('.hidden_content').find('.hidden_content__hidden').slideDown();
+	});
+	$('.hidden_content__hidden').slideUp();
 
 	
 // figures
