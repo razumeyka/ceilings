@@ -1,5 +1,6 @@
 .two-colums{
 	padding-bottom: 120px;
+	flex-wrap: nowrap;
 }
 
 .column-left{
@@ -283,9 +284,16 @@ ul.ulcols li:before{
 }
 
 
+/**/
+ 
+
 /*media*/
 
 @media screen and (max-width: 1279px) {
+	.two-colums { 
+		flex-wrap: wrap;
+	}
+	
 	.column-left { 
 		width: 100%;
 		margin: 0;
